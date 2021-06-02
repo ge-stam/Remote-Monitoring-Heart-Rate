@@ -32,18 +32,12 @@ def calculation(path):
         print("Calculating heart rate...")
         heart_rate = heart_rate_calculation.find_heart_rate(fft, frequencies, freq_min, freq_max)
 
-    # Collapse laplacian pyramid to generate final video
-    #print("Rebuilding final video...")
-    #amplified_frames = laplacian_pyramid.collapse_laplacian_video_pyramid(lap_video, frame_ct)
+
 
     # Output heart rate and final video
     print("Heart rate: ", heart_rate, "bpm")
     #print("Displaying final video...")
 
-    #for frame in amplified_frames:
-    #    cv2.imshow("frame", frame)
-    #    cv2.waitKey(20)
 
     return heart_rate
 
-#calculation("C:/Users/stamo/Downloads/video-1622273593_geo2.mp4")
