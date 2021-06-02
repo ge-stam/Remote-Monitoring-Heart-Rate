@@ -17,9 +17,6 @@ def read_video(path):
 #############################################################################
 ### get video as input and get a rectangle with the face detected
 #############################################################################
-### based on
-### https://github.com/rohintangirala/eulerian-remote-heartrate-detection/blob/master/preprocessing.py
-############################################################################
 
     cascPath = r"C:\Users\stamo\Desktop\Webcam-Face-Detect-master\Webcam-Face-Detect-master\haarcascade_frontalface_default.xml"
     faceCascade = cv2.CascadeClassifier(cascPath)
