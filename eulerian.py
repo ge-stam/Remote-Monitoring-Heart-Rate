@@ -1,8 +1,7 @@
 ##################################################################################
 ### Fourier Transformation for Eulerian Method
 ##################################################################################
-### basede on https://github.com/rohintangirala/eulerian-remote-heartrate-detection/blob/master/eulerian.py
-##################################################################################
+
 
 import numpy as np
 import scipy.fftpack as fftpack
