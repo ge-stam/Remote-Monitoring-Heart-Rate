@@ -36,4 +36,4 @@ $ pip install -r requirements.txt
 After that you can run main.py.
 In order to run the app on your phone you need to follow the above instructions( How to convert Kivy to androik APK).
 
-### This application was created for the purposes of a Biomedical Course at National Technical University of Athens.
+### 🎓 This application was created for the purposes of a Biomedical Course at National Technical University of Athens.
