@@ -1,8 +1,7 @@
 ####################################################################
 ### Here we get as input the fft signal and get heart rate as Output
 ####################################################################
-### based on https://github.com/rohintangirala/eulerian-remote-heartrate-detection/blob/master/heartrate.py
-####################################################################
+
 
 from scipy import signal
 
