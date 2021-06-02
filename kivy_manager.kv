@@ -1,0 +1,105 @@
+#:kivy 1.1.0
+
+WindowManager:
+    FirstWindow:
+    SecondWindow:
+
+
+<FirstWindow>:
+    name: "first"
+
+    GridLayout:
+        cols:1
+
+        GridLayout:
+            cols: 2
+
+            Label:
+                text: "This is an application dedicated for healthcare purposes\n which measures your heart rate using only a face-video \n Upload a clear video of your face.\n It's recommended to be a video of 5-8 seconds.\n Press the start button to measure your heart rate\n                                       Enjoy it!  "
+                font_size: 30
+                color: 0.1, 0,0.2, 1 # <-----------
+                canvas.before:
+                    Color:
+                        rgba: 0.2, 0.5, 0.5, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        Button:
+            text: "START"
+            font_size:45
+            size_hint: 0.4,0.6
+            color: 0.1, 0,0.2, 1
+            on_release: app.root.current = "second"
+
+        Button:
+            text: "EXIT"
+            font_size:45
+            size_hint: 0.2,0.3
+            color: 0.1, 0,0.2, 1
+            on_release: app.stop()
+<SecondWindow>:
+    name: "second"
+    #Root:
+    #LoadDialog:
+    #ResultDialog:
+#<Root>:
+    text_input: text_input
+
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: None
+            height: 30
+            Button:
+                text: 'Load'
+                font_size:35
+                color: 0.1, 0,0.2, 1 # <-----------
+                on_release: root.show_load()
+        BoxLayout:
+            TextInput:
+                id: text_input
+                text: ''
+
+
+
+<LoadDialog>:
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: "vertical"
+        FileChooserListView:
+            id: filechooser
+
+        BoxLayout:
+            size_hint_y: None
+            height: 30
+            Button:
+                text: "Cancel"
+                on_release: root.cancel()
+
+            Button:
+                id: load_id
+                text: "Load"
+                on_release: root.load(filechooser.path, filechooser.selection)
+                on_release: app.root.current = "first"
+                on_press: root.cancel()
+
+<ResultDialog>:
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: "vertical"
+        FileChooserListView:
+            id: filechooser
+
+        BoxLayout:
+            size_hint_y: None
+            height: 30
+            Button:
+                text: "Cancel"
+                on_release: root.cancel()
+
+            Button:
+                id: load_ident
+                text: "Load"
