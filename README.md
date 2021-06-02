@@ -26,8 +26,14 @@ files are described below:
 ## How to convert Kivy to Android APK
 Redirect here: ( https://github.com/attreyabhatt/Kivy-Pong-Game/blob/master/PingPong/KivyToAndroid.txt )
 
+
 ## How to run:
-To run the app on your pc you just need to install the libraries given on requirements.txt and run main.py.
+To run the app on your pc you just need to install the libraries given on requirements.txt 
+The following command will install the packages according to the configuration file requirements.txt.
+
+$ pip install -r requirements.txt
+
+After that you can run main.py.
 In order to run the app on your phone you need to follow the above instructions( How to convert Kivy to androik APK).
 
 ### This application was created for the purposes of a Biomedical Course at National Technical University of Athens.
