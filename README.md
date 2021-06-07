@@ -5,11 +5,11 @@ The output is the user's heart rate.
 
 # Method:
 In this method there are 5 stages:
--Face Recognition
--Preprocessing image(Laplacian Pyramid)
--Eulerian magnification and Band pass filtering
--Heart rate calculation
--Kivy app for android
+- Face Recognition
+- Preprocessing image(Laplacian Pyramid)
+- Eulerian magnification and Band pass filtering
+- Heart rate calculation
+- Kivy app for android
 
 ## Program organization:
 The main.py file contains the main program that utilizes all of the other modules defined in the other code files
