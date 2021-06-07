@@ -33,6 +33,8 @@ The following command will install the packages according to the configuration f
 
 $ pip install -r requirements.txt
 
+Also, you have to change the path in face_recognition.py at line 21. Replace it with the path which contains the file haarcascade_frontalface_default.xml.
+
 After that you can run main.py.
 In order to run the app on your phone you need to follow the above instructions( How to convert Kivy to androik APK).
 
